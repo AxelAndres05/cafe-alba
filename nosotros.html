@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#6f4e37">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Café Alba">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Nosotros | Café Alba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-contenido">
+      <a href="index.html" class="logo">☕ Café<span>Alba</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="nosotros.html" class="activo">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="btn btn-primario">Reservar</a>
+        <button type="button" class="btn btn-borde btn-instalar" hidden>Instalar app</button>
+      </nav>
+      <button class="hamburguesa" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="etiqueta">Quiénes somos</span>
+      <h1>Nuestra historia</h1>
+      <p>Una cafetería pequeña con un gran sueño: que cada mañana empiece con una sonrisa.</p>
+    </div>
+  </div>
+
+  <!-- ===== HISTORIA ===== -->
+  <section>
+    <div class="container dos-col">
+      <div class="reveal">
+        <span class="etiqueta">Desde el primer grano</span>
+        <h2>Todo comenzó con una taza de café</h2>
+        <p>Café Alba nació en una cocina familiar, entre recetas de la abuela y el aroma del café recién molido. Con el tiempo, ese cariño se convirtió en un espacio abierto para todos.</p>
+        <p>Hoy seleccionamos granos de productores locales, horneamos pan todas las mañanas y preparamos desayunos con ingredientes frescos. Cada detalle está pensado para que te sientas como en casa.</p>
+        <a href="menu.html" class="btn btn-primario">Ver el menú</a>
+      </div>
+      <div class="collage reveal">
+        <!-- IMAGEN: fachada o interior de la cafetería -->
+        <div class="img-box"><img src="images/local.jpg" alt="Interior de la cafetería"></div>
+        <!-- IMAGEN: detalle (molino, prensa francesa, taza, etc.) -->
+        <div class="img-box"><img src="images/detalle.jpg" alt="Detalle de preparación de café"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VALORES ===== -->
+  <section class="fondo-crema">
+    <div class="container">
+      <div class="titulo-seccion reveal">
+        <span class="etiqueta">Lo que nos mueve</span>
+        <h2>Nuestros valores</h2>
+        <div class="linea"></div>
+      </div>
+      <div class="caracteristicas-grid">
+        <div class="caracteristica reveal"><div class="icono">🤝</div><h3>Comercio justo</h3><p>Pagamos precios justos a los productores y cuidamos cada eslabón de la cadena.</p></div>
+        <div class="caracteristica reveal"><div class="icono">♻️</div><h3>Sustentabilidad</h3><p>Reducimos desperdicios y usamos empaques compostables siempre que podemos.</p></div>
+        <div class="caracteristica reveal"><div class="icono">✨</div><h3>Calidad</h3><p>Frescura y sabor en cada preparación, sin atajos.</p></div>
+        <div class="caracteristica reveal"><div class="icono">🏡</div><h3>Comunidad</h3><p>Un espacio para convivir, crear y compartir con los vecinos.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EQUIPO ===== -->
+  <section>
+    <div class="container">
+      <div class="titulo-seccion reveal">
+        <span class="etiqueta">Las personas detrás</span>
+        <h2>Nuestro equipo</h2>
+        <p>Baristas, cocineros y panaderos que aman lo que hacen.</p>
+        <div class="linea"></div>
+      </div>
+      <div class="equipo-grid">
+        <div class="miembro reveal"><div class="img-box"><img src="images/equipo-1.jpg" alt="Fundadora"></div><h3>Laura Méndez</h3><span>Fundadora</span></div>
+        <div class="miembro reveal"><div class="img-box"><img src="images/equipo-2.jpg" alt="Barista principal"></div><h3>Diego Salgado</h3><span>Barista principal</span></div>
+        <div class="miembro reveal"><div class="img-box"><img src="images/equipo-3.jpg" alt="Chef de cocina"></div><h3>Sofía Ortega</h3><span>Chef de cocina</span></div>
+        <div class="miembro reveal"><div class="img-box"><img src="images/equipo-4.jpg" alt="Maestro panadero"></div><h3>Mateo Rivera</h3><span>Maestro panadero</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">☕ Café<span>Alba</span></a>
+          <p>Café de especialidad, desayunos caseros y pan recién horneado. Hecho con amor cada mañana.</p>
+          <div class="redes"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="WhatsApp">wa</a></div>
+        </div>
+        <div><h4>Explorar</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="menu.html">Menú</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+        <div><h4>Horario</h4><ul><li>Lun - Vie: 7:00 - 20:00</li><li>Sábado: 8:00 - 21:00</li><li>Domingo: 8:00 - 15:00</li></ul></div>
+        <div><h4>Suscríbete</h4><p>Recibe promociones y novedades.</p>
+          <form class="suscribir" id="formSuscribir"><input type="email" placeholder="Tu correo"><button type="submit">Enviar</button></form>
+        </div>
+      </div>
+    </div>
+    <div class="copy">© <span id="anio"></span> Café Alba. Todos los derechos reservados.</div>
+  </footer>
+
+  <button class="btn-subir" aria-label="Subir">↑</button>
+  <div class="toast"></div>
+  <script src="script.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>

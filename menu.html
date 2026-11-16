@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#6f4e37">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Café Alba">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Menú | Café Alba</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-contenido">
+      <a href="index.html" class="logo">☕ Café<span>Alba</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="menu.html" class="activo">Menú</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="btn btn-primario">Reservar</a>
+        <button type="button" class="btn btn-borde btn-instalar" hidden>Instalar app</button>
+      </nav>
+      <button class="hamburguesa" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="etiqueta">Nuestra carta</span>
+      <h1>Menú</h1>
+      <p>Café, desayunos y panadería preparados al momento. Elige tu favorito.</p>
+    </div>
+  </div>
+
+  <section style="padding-top: 40px;">
+    <div class="container">
+
+      <div class="filtros">
+        <button class="filtro activo" data-filtro="todos">Todo</button>
+        <button class="filtro" data-filtro="caliente">Café caliente</button>
+        <button class="filtro" data-filtro="frio">Bebidas frías</button>
+        <button class="filtro" data-filtro="desayuno">Desayunos</button>
+        <button class="filtro" data-filtro="pan">Panadería</button>
+      </div>
+
+      <div class="productos-grid">
+
+        <!-- ===== CAFÉ CALIENTE ===== -->
+        <article class="producto" data-cat="caliente">
+          <div class="img-box"><img src="images/espresso.jpg" alt="Espresso"></div>
+          <div class="producto-info"><span class="cat">Café caliente</span><h3>Espresso</h3><p>Intenso y aromático, con crema dorada.</p>
+            <div class="producto-pie"><span class="precio">$40</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="caliente">
+          <div class="img-box"><img src="images/americano.jpg" alt="Café americano"></div>
+          <div class="producto-info"><span class="cat">Café caliente</span><h3>Americano</h3><p>Espresso suavizado con agua caliente.</p>
+            <div class="producto-pie"><span class="precio">$45</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="caliente">
+          <div class="img-box"><img src="images/capuchino.jpg" alt="Capuchino"></div>
+          <div class="producto-info"><span class="cat">Café caliente</span><h3>Capuchino</h3><p>Espresso, leche vaporizada y espuma cremosa.</p>
+            <div class="producto-pie"><span class="precio">$55</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="caliente">
+          <div class="img-box"><img src="images/latte.jpg" alt="Latte"></div>
+          <div class="producto-info"><span class="cat">Café caliente</span><h3>Latte</h3><p>Suave y cremoso, con más leche y menos espuma.</p>
+            <div class="producto-pie"><span class="precio">$58</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="caliente">
+          <div class="img-box"><img src="images/mocha.jpg" alt="Mocha con chocolate"></div>
+          <div class="producto-info"><span class="cat">Café caliente</span><h3>Mocha</h3><p>Espresso con chocolate oscuro y leche.</p>
+            <div class="producto-pie"><span class="precio">$65</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="caliente">
+          <div class="img-box"><img src="images/chai.jpg" alt="Chai latte"></div>
+          <div class="producto-info"><span class="cat">Café caliente</span><h3>Chai Latte</h3><p>Té especiado con leche, canela y vainilla.</p>
+            <div class="producto-pie"><span class="precio">$60</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+
+        <!-- ===== BEBIDAS FRÍAS ===== -->
+        <article class="producto" data-cat="frio">
+          <div class="img-box"><img src="images/cold-brew.jpg" alt="Cold brew"></div>
+          <div class="producto-info"><span class="cat">Bebida fría</span><h3>Cold Brew</h3><p>Infusionado en frío 18 horas. Suave y refrescante.</p>
+            <div class="producto-pie"><span class="precio">$60</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="frio">
+          <div class="img-box"><img src="images/frappe.jpg" alt="Frappé de caramelo"></div>
+          <div class="producto-info"><span class="cat">Bebida fría</span><h3>Frappé de caramelo</h3><p>Café frappé con salsa de caramelo y crema batida.</p>
+            <div class="producto-pie"><span class="precio">$75</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="frio">
+          <div class="img-box"><img src="images/latte-helado.jpg" alt="Latte helado"></div>
+          <div class="producto-info"><span class="cat">Bebida fría</span><h3>Latte helado</h3><p>Espresso sobre hielo con leche fría.</p>
+            <div class="producto-pie"><span class="precio">$62</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="frio">
+          <div class="img-box"><img src="images/limonada-cafe.jpg" alt="Limonada de café"></div>
+          <div class="producto-info"><span class="cat">Bebida fría</span><h3>Limonada de café</h3><p>Combinación cítrica y energética para días de calor.</p>
+            <div class="producto-pie"><span class="precio">$58</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+
+        <!-- ===== DESAYUNOS ===== -->
+        <article class="producto" data-cat="desayuno">
+          <div class="img-box"><img src="images/chilaquiles.jpg" alt="Chilaquiles"></div>
+          <div class="producto-info"><span class="cat">Desayuno</span><h3>Chilaquiles</h3><p>Verdes o rojos, con crema, queso y huevo o pollo.</p>
+            <div class="producto-pie"><span class="precio">$95</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="desayuno">
+          <div class="img-box"><img src="images/huevos.jpg" alt="Huevos al gusto"></div>
+          <div class="producto-info"><span class="cat">Desayuno</span><h3>Huevos al gusto</h3><p>Revueltos, estrellados o a la mexicana con frijoles.</p>
+            <div class="producto-pie"><span class="precio">$80</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="desayuno">
+          <div class="img-box"><img src="images/hotcakes.jpg" alt="Hot cakes"></div>
+          <div class="producto-info"><span class="cat">Desayuno</span><h3>Hot Cakes</h3><p>Con mantequilla, miel de maple y fruta de temporada.</p>
+            <div class="producto-pie"><span class="precio">$85</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="desayuno">
+          <div class="img-box"><img src="images/molletes.jpg" alt="Molletes"></div>
+          <div class="producto-info"><span class="cat">Desayuno</span><h3>Molletes</h3><p>Pan gratinado con frijoles, queso y pico de gallo.</p>
+            <div class="producto-pie"><span class="precio">$70</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="desayuno">
+          <div class="img-box"><img src="images/avocado-toast.jpg" alt="Tostada de aguacate"></div>
+          <div class="producto-info"><span class="cat">Desayuno</span><h3>Avocado Toast</h3><p>Pan artesanal con aguacate, huevo pochado y semillas.</p>
+            <div class="producto-pie"><span class="precio">$90</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="desayuno">
+          <div class="img-box"><img src="images/omelette.jpg" alt="Omelette"></div>
+          <div class="producto-info"><span class="cat">Desayuno</span><h3>Omelette</h3><p>Relleno de jamón, queso y champiñones, con ensalada.</p>
+            <div class="producto-pie"><span class="precio">$88</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+
+        <!-- ===== PANADERÍA ===== -->
+        <article class="producto" data-cat="pan">
+          <div class="img-box"><img src="images/croissant.jpg" alt="Croissant"></div>
+          <div class="producto-info"><span class="cat">Panadería</span><h3>Croissant</h3><p>Hojaldrado y mantequilloso, recién salido del horno.</p>
+            <div class="producto-pie"><span class="precio">$45</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="pan">
+          <div class="img-box"><img src="images/concha.jpg" alt="Concha"></div>
+          <div class="producto-info"><span class="cat">Panadería</span><h3>Concha</h3><p>La clásica, de vainilla o chocolate. Perfecta con café.</p>
+            <div class="producto-pie"><span class="precio">$25</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="pan">
+          <div class="img-box"><img src="images/pan-elote.jpg" alt="Pan de elote"></div>
+          <div class="producto-info"><span class="cat">Panadería</span><h3>Pan de elote</h3><p>Dulce, húmedo y esponjoso, hecho a diario.</p>
+            <div class="producto-pie"><span class="precio">$35</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+        <article class="producto" data-cat="pan">
+          <div class="img-box"><img src="images/muffin.jpg" alt="Muffin de arándano"></div>
+          <div class="producto-info"><span class="cat">Panadería</span><h3>Muffin de arándano</h3><p>Suave por dentro, dorado por fuera.</p>
+            <div class="producto-pie"><span class="precio">$38</span><button class="btn-mas" aria-label="Agregar">+</button></div></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top: 0;">
+    <div class="container">
+      <div class="cta reveal">
+        <h2>¿Pedido para llevar o evento?</h2>
+        <p>Escríbenos y preparamos tu orden o paquete de desayunos para tu equipo.</p>
+        <a href="contacto.html" class="btn">Contáctanos</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">☕ Café<span>Alba</span></a>
+          <p>Café de especialidad, desayunos caseros y pan recién horneado. Hecho con amor cada mañana.</p>
+          <div class="redes"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="WhatsApp">wa</a></div>
+        </div>
+        <div><h4>Explorar</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="menu.html">Menú</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+        <div><h4>Horario</h4><ul><li>Lun - Vie: 7:00 - 20:00</li><li>Sábado: 8:00 - 21:00</li><li>Domingo: 8:00 - 15:00</li></ul></div>
+        <div><h4>Suscríbete</h4><p>Recibe promociones y novedades.</p>
+          <form class="suscribir" id="formSuscribir"><input type="email" placeholder="Tu correo"><button type="submit">Enviar</button></form>
+        </div>
+      </div>
+    </div>
+    <div class="copy">© <span id="anio"></span> Café Alba. Todos los derechos reservados.</div>
+  </footer>
+
+  <button class="btn-subir" aria-label="Subir">↑</button>
+  <div class="toast"></div>
+  <script src="script.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>

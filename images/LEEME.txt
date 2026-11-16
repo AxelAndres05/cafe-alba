@@ -1,0 +1,20 @@
+Coloca aquí tus imágenes con estos nombres (o cambia el nombre en el atributo src del HTML).
+Mientras no exista la imagen, la página muestra un recuadro punteado con el nombre del archivo.
+
+INICIO (index.html)
+  hero.jpg, capuchino.jpg, cold-brew.jpg, chilaquiles.jpg, hotcakes.jpg,
+  historia-1.jpg, historia-2.jpg, cliente-1.jpg, cliente-2.jpg, cliente-3.jpg
+
+MENÚ (menu.html)
+  espresso.jpg, americano.jpg, capuchino.jpg, latte.jpg, mocha.jpg, chai.jpg,
+  cold-brew.jpg, frappe.jpg, latte-helado.jpg, limonada-cafe.jpg,
+  chilaquiles.jpg, huevos.jpg, hotcakes.jpg, molletes.jpg, avocado-toast.jpg, omelette.jpg,
+  croissant.jpg, concha.jpg, pan-elote.jpg, muffin.jpg
+
+NOSOTROS (nosotros.html)
+  local.jpg, detalle.jpg, equipo-1.jpg ... equipo-4.jpg, galeria-1.jpg ... galeria-6.jpg
+
+CONTACTO (contacto.html)
+  mapa.jpg
+
+Tamaños recomendados: hero 800x1000, productos 800x600, equipo/clientes cuadradas, galería cuadradas.

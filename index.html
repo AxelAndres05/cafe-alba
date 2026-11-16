@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#6f4e37">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Café Alba">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Café Alba | Café de especialidad y desayunos</title>
+  <meta name="description" content="Café de especialidad, desayunos y pan recién horneado. Empieza tu día con aroma a café.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="container nav-contenido">
+      <a href="index.html" class="logo">☕ Café<span>Alba</span></a>
+      <nav class="nav-links">
+        <a href="index.html" class="activo">Inicio</a>
+        <a href="menu.html">Menú</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="btn btn-primario">Reservar</a>
+        <button type="button" class="btn btn-borde btn-instalar" hidden>Instalar app</button>
+      </nav>
+      <button class="hamburguesa" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <span class="grano">☕</span><span class="grano">🫘</span><span class="grano">🫘</span>
+    <div class="container hero-grid">
+      <div class="hero-texto">
+        <span class="etiqueta">Café de especialidad &amp; desayunos</span>
+        <h1>Despierta tus sentidos con un <em>buen café</em></h1>
+        <p>Granos seleccionados, pan recién horneado y desayunos hechos con cariño. Tu rincón favorito para empezar bien el día.</p>
+        <div class="hero-botones">
+          <a href="menu.html" class="btn btn-primario">Ver el menú</a>
+          <a href="nosotros.html" class="btn btn-borde">Conócenos</a>
+        </div>
+        <div class="hero-datos">
+          <div><strong>12+</strong><span>Tipos de café</span></div>
+          <div><strong>100%</strong><span>Grano de origen</span></div>
+          <div><strong>4.9★</strong><span>Opiniones</span></div>
+        </div>
+      </div>
+      <div class="hero-imagen">
+        <!-- IMAGEN: foto principal (taza de café / mesa de desayuno) -->
+        <div class="img-box"><img src="images/hero.png" alt="Taza de café con desayuno sobre la mesa"></div>
+        <div class="hero-tarjeta">
+          <span class="icono">🥐</span>
+          <div><strong>Pan recién horneado</strong><small>Todos los días desde las 7:00</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BANDA ========== -->
+  <div class="banda">
+    <div class="banda-track">
+      <span>Espresso</span><span>Capuchino</span><span>Chilaquiles</span><span>Cold Brew</span><span>Hot Cakes</span><span>Croissants</span>
+      <span>Espresso</span><span>Capuchino</span><span>Chilaquiles</span><span>Cold Brew</span><span>Hot Cakes</span><span>Croissants</span>
+    </div>
+  </div>
+
+  <!-- ========== CARACTERÍSTICAS ========== -->
+  <section>
+    <div class="container">
+      <div class="titulo-seccion reveal">
+        <span class="etiqueta">¿Por qué elegirnos?</span>
+        <h2>Hecho con pasión, servido con calidez</h2>
+        <div class="linea"></div>
+      </div>
+      <div class="caracteristicas-grid">
+        <div class="caracteristica reveal"><div class="icono">🌱</div><h3>Grano de origen</h3><p>Trabajamos con productores locales para ofrecerte café fresco y de calidad.</p></div>
+        <div class="caracteristica reveal"><div class="icono">🍳</div><h3>Desayunos caseros</h3><p>Recetas tradicionales con ingredientes frescos preparados al momento.</p></div>
+        <div class="caracteristica reveal"><div class="icono">🥖</div><h3>Panadería diaria</h3><p>Hornos encendidos desde temprano para que tu pan llegue calientito.</p></div>
+        <div class="caracteristica reveal"><div class="icono">💛</div><h3>Ambiente acogedor</h3><p>Un espacio cálido para trabajar, platicar o simplemente relajarte.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FAVORITOS ========== -->
+  <section class="fondo-crema">
+    <div class="container">
+      <div class="titulo-seccion reveal">
+        <span class="etiqueta">Nuestros favoritos</span>
+        <h2>Lo que más piden</h2>
+        <p>Una probadita de lo que preparamos cada mañana.</p>
+        <div class="linea"></div>
+      </div>
+      <div class="productos-grid">
+        <article class="producto reveal">
+          <div class="img-box"><img src="images/capuchino.jpg" alt="Capuchino con arte latte"></div>
+          <div class="producto-info">
+            <span class="cat">Bebida caliente</span><h3>Capuchino</h3>
+            <p>Espresso doble con leche vaporizada y una cremosa espuma.</p>
+            <div class="producto-pie"><span class="precio">$55</span><button class="btn-mas" aria-label="Agregar">+</button></div>
+          </div>
+        </article>
+        <article class="producto reveal">
+          <div class="img-box"><img src="images/cold-brew.jpg" alt="Vaso de cold brew con hielo"></div>
+          <div class="producto-info">
+            <span class="cat">Bebida fría</span><h3>Cold Brew</h3>
+            <p>Café infusionado en frío durante 18 horas. Suave y refrescante.</p>
+            <div class="producto-pie"><span class="precio">$60</span><button class="btn-mas" aria-label="Agregar">+</button></div>
+          </div>
+        </article>
+        <article class="producto reveal">
+          <div class="img-box"><img src="images/chilaquiles.jpg" alt="Plato de chilaquiles con huevo"></div>
+          <div class="producto-info">
+            <span class="cat">Desayuno</span><h3>Chilaquiles</h3>
+            <p>Verdes o rojos, con crema, queso, cebolla y huevo o pollo.</p>
+            <div class="producto-pie"><span class="precio">$95</span><button class="btn-mas" aria-label="Agregar">+</button></div>
+          </div>
+        </article>
+        <article class="producto reveal">
+          <div class="img-box"><img src="images/hotcakes.jpg" alt="Hot cakes con miel y frutas"></div>
+          <div class="producto-info">
+            <span class="cat">Desayuno</span><h3>Hot Cakes</h3>
+            <p>Esponjosos, con mantequilla, miel de maple y fruta de temporada.</p>
+            <div class="producto-pie"><span class="precio">$85</span><button class="btn-mas" aria-label="Agregar">+</button></div>
+          </div>
+        </article>
+      </div>
+      <div class="centrar reveal"><a href="menu.html" class="btn btn-primario">Ver menú completo</a></div>
+    </div>
+  </section>
+
+  <!-- ========== HISTORIA ========== -->
+  <section>
+    <div class="container dos-col">
+      <div class="collage reveal">
+        <!-- IMAGEN: barista preparando café / interior del local -->
+        <div class="img-box"><img src="images/historia-1.jpg" alt="Barista preparando café"></div>
+        <!-- IMAGEN: detalle de granos de café o taza -->
+        <div class="img-box"><img src="images/historia-2.jpg" alt="Granos de café tostados"></div>
+      </div>
+      <div class="reveal">
+        <span class="etiqueta">Nuestra historia</span>
+        <h2>Un lugar donde cada taza cuenta algo</h2>
+        <p>Café Alba nació del amor por las mañanas tranquilas y el aroma del café recién molido. Queremos que cada visita se sienta como llegar a casa.</p>
+        <ul class="lista-check">
+          <li>Café tostado en pequeños lotes</li>
+          <li>Opciones vegetarianas y sin lactosa</li>
+          <li>Wi-Fi gratis y ambiente tranquilo</li>
+        </ul>
+        <br>
+        <a href="nosotros.html" class="btn btn-borde">Leer más</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONIOS ========== -->
+  <section class="fondo-crema">
+    <div class="container">
+      <div class="titulo-seccion reveal">
+        <span class="etiqueta">Opiniones</span>
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="linea"></div>
+      </div>
+      <div class="testimonios-grid">
+        <div class="testimonio reveal">
+          <div class="estrellas">★★★★★</div>
+          <p>El mejor capuchino que he probado, y los chilaquiles son una maravilla. Mi lugar de todos los sábados.</p>
+          <div class="persona"><div class="img-box"><img src="images/cliente-1.jpg" alt="Foto de cliente"></div><div><strong>María González</strong><small>Cliente frecuente</small></div></div>
+        </div>
+        <div class="testimonio reveal">
+          <div class="estrellas">★★★★★</div>
+          <p>Ambiente perfecto para trabajar con la laptop. El cold brew y los croissants me tienen enamorado.</p>
+          <div class="persona"><div class="img-box"><img src="images/cliente-2.jpg" alt="Foto de cliente"></div><div><strong>Carlos Ramírez</strong><small>Freelancer</small></div></div>
+        </div>
+        <div class="testimonio reveal">
+          <div class="estrellas">★★★★★</div>
+          <p>Atención muy amable y porciones generosas. Los hot cakes son los favoritos de mis hijos.</p>
+          <div class="persona"><div class="img-box"><img src="images/cliente-3.jpg" alt="Foto de cliente"></div><div><strong>Ana Torres</strong><small>Mamá de dos</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section>
+    <div class="container">
+      <div class="cta reveal">
+        <h2>¿Te antojó un cafecito?</h2>
+        <p>Te esperamos todos los días desde las 7:00 a.m. Reserva tu mesa o pasa a visitarnos.</p>
+        <a href="contacto.html" class="btn">Reservar mesa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo">☕ Café<span>Alba</span></a>
+          <p>Café de especialidad, desayunos caseros y pan recién horneado. Hecho con amor cada mañana.</p>
+          <div class="redes"><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="WhatsApp">wa</a></div>
+        </div>
+        <div><h4>Explorar</h4><ul><li><a href="index.html">Inicio</a></li><li><a href="menu.html">Menú</a></li><li><a href="nosotros.html">Nosotros</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+        <div><h4>Horario</h4><ul><li>Lun - Vie: 7:00 - 20:00</li><li>Sábado: 8:00 - 21:00</li><li>Domingo: 8:00 - 15:00</li></ul></div>
+        <div><h4>Suscríbete</h4><p>Recibe promociones y novedades.</p>
+          <form class="suscribir" id="formSuscribir"><input type="email" placeholder="Tu correo"><button type="submit">Enviar</button></form>
+        </div>
+      </div>
+    </div>
+    <div class="copy">© <span id="anio"></span> Café Alba. Todos los derechos reservados.</div>
+  </footer>
+
+  <button class="btn-subir" aria-label="Subir">↑</button>
+  <div class="toast"></div>
+  <script src="script.js"></script>
+  <script src="pwa.js"></script>
+</body>
+</html>
